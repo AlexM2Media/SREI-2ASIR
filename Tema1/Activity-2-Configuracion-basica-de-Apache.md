@@ -8,13 +8,13 @@ Para configurar Apache para que escuche en el puerto 81 además del 80:
 
 1\. Abre el archivo de configuración principal de Apache:
 
-```
+```bash
    sudo nano /etc/apache2/ports.conf
 ```
 
 2\. Añade la siguiente línea debajo de "Listen 80":
 
-```
+```text
    Listen 81
 ```
 
@@ -26,13 +26,13 @@ Para añadir el dominio al archivo hosts:
 
 1\. Abre el archivo hosts:
 
-```
+```bash
    sudo nano /etc/hosts
 ```
 
 2\. Añade la siguiente línea al final del archivo:
 
-```
+```text
    127.0.0.1    marisma.intranet
 ```
 
@@ -42,13 +42,13 @@ Para añadir el dominio al archivo hosts:
 
 1\. Abre el archivo de configuración de Apache:
 
-```
+```bash
    sudo nano /etc/apache2/apache2.conf
 ```
 
 2\. Busca la línea "ServerTokens" y cámbiala a:
 
-```
+```text
    ServerTokens Prod
 ```
 
@@ -58,13 +58,13 @@ Para añadir el dominio al archivo hosts:
 
 1\. Abre el archivo de configuración:
 
-```
+```bash
    sudo nano /etc/apache2/apache2.conf
 ```
 
 2\. Busca la directiva "ServerSignature" y cámbiala a:
 
-```
+```apache
    ServerSignature On
 ```
 
@@ -74,13 +74,13 @@ Para añadir el dominio al archivo hosts:
 
 1\. Crea los directorios:
 
-```
+```bash
    sudo mkdir /var/www/html/prueba /var/www/html/prueba2
 ```
 
 2\. Crea páginas de ejemplo en cada directorio:
 
-```
+```bash
    echo "<h1>Página de prueba 1</h1>" | sudo tee /var/www/html/prueba/index.html
 
    echo "<h1>Página de prueba 2</h1>" | sudo tee /var/www/html/prueba2/index.html
@@ -90,13 +90,13 @@ Para añadir el dominio al archivo hosts:
 
 1\. Abre el archivo de configuración del sitio por defecto:
 
-```
+```bash
    sudo nano /etc/apache2/sites-available/000-default.conf
 ```
 
 2\. Añade las siguientes líneas dentro de la sección <VirtualHost>:
 
-```
+```apache
    Redirect /prueba /prueba2
 ```
 
@@ -108,13 +108,13 @@ Para redireccionar solo una página específica:
 
 1\. Abre el archivo de configuración del sitio:
 
-```
+```apache
    sudo nano /etc/apache2/sites-available/000-default.conf
 ```
 
 2\. Añade la siguiente línea dentro de <VirtualHost>:
 
-```
+```apache
    Redirect /prueba/pagina.html /prueba2/pagina.html
 ```
 
@@ -124,13 +124,13 @@ Para redireccionar solo una página específica:
 
 1\. Habilita el módulo userdir:
 
-```
+```bash
    sudo a2enmod userdir
 ```
 
 2\. Reinicia Apache:
 
-```
+```bash
    sudo systemctl restart apache2
 ```
 
@@ -138,13 +138,13 @@ Para redireccionar solo una página específica:
 
 1\. Abre el archivo de configuración del sitio:
 
-```
+```bash
    sudo nano /etc/apache2/sites-available/000-default.conf
 ```
 
 2\. Añade la siguiente línea dentro de <VirtualHost>:
 
-```
+```apache
    Alias /usuario /home/usuario/public_html
 ```
 
@@ -158,7 +158,7 @@ Para comprobar si Apache indexa los directorios:
 
 1\. Crea un directorio sin un archivo index:
 
-```
+```bash
    sudo mkdir /var/www/html/test
 ```
 
@@ -170,19 +170,19 @@ Para desactivar el indexado:
 
 1\. Abre el archivo de configuración:
 
-```
+```bash
    sudo nano /etc/apache2/apache2.conf
 ```
 
 2\. Busca la sección <Directory /var/www/> y cambia la línea Options a:
 
-```
+```apache
    Options FollowSymLinks
 ```
 
 3\. Guarda, cierra el archivo y reinicia Apache:
 
-```
+```bash
    sudo systemctl restart apache2
 ```
 

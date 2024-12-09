@@ -1,10 +1,10 @@
 # Actividad #9 - Autenticación Digest
 
-## Ejercicio:
+## Ejercicio
 
 Crea dos subdirectorios en el host virtual default que se llamen grupo1 y grupo2. Crea varios usuarios con la utilidad htdigest, asignando a cada uno un dominio distinto (dominio1 y dominio2). Configura el directorio grupo1 para que sólo puedan acceder los usuarios del dominio dominio1; y el directorio grupo2 para que sólo puedan acceder los usuarios del dominio dominio2.
 
-### Pasos para realizar el ejercicio:
+### Pasos para realizar el ejercicio
 
 1\. Crear los subdirectorios:
 

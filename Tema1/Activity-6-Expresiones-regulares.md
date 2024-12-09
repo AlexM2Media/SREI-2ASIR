@@ -2,7 +2,7 @@
 
 ## Ejercicios
 
-### 1. Directorios en /www/ cuyo nombre consista en tres dígitos.
+### 1. Directorios en /www/ cuyo nombre consista en tres dígitos
 
 Expresión regular: `^/www/[0-9]{3}$`
 

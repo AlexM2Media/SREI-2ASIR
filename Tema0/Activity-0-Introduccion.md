@@ -64,7 +64,7 @@
 
    2. Luego, enviamos una solicitud GET:
 
-```
+```text
       GET / HTTP/1.1
       Host: www.example.com
 ```
@@ -111,11 +111,11 @@
 
 ## Actividad 0.2 - UDP and TCP: Comparison of Transport Protocols
 
-### Video de referencia:
+### Video de referencia
 
 [UDP and TCP: Comparison of Transport Protocols](https://www.youtube.com/watch?v=Vdc8TCESIg8)
 
-### Preguntas y respuestas:
+### Preguntas y respuestas
 
 1\. **Diferencias entre UDP y TCP**
 
@@ -155,7 +155,7 @@
 
 ## Actividad 0.3 - Práctica telnet/http
 
-### Referencias:
+### Referencias
 
 - [Video tutorial](https://www.youtube.com/watch?v=xpBpGC08f4Q&t=189s)
 
@@ -167,7 +167,7 @@ Sigue las instrucciones del artículo y realiza los ejemplos sugeridos.
 
 ## Actividad 0.4 - Usando cUrl
 
-### Referencia:
+### Referencia
 
 [Manual de cURL](https://curl.se/docs/manual.html)
 
@@ -177,31 +177,31 @@ Ejemplos de uso de cURL:
 
 1\. Descargar una página web:
 
-```
+```bash
    curl https://www.example.com
 ```
 
 2\. Descargar un archivo:
 
-```
+```bash
    curl -O https://example.com/file.zip
 ```
 
 3\. Enviar datos POST:
 
-```
+```bash
    curl -X POST -d "param1=value1&param2=value2" https://example.com/api
 ```
 
 4\. Obtener solo los encabezados de respuesta:
 
-```
+```bash
    curl -I https://www.example.com
 ```
 
 5\. Usar autenticación básica:
 
-```
+```bash
    curl -u username:password https://example.com/api
 ```
 

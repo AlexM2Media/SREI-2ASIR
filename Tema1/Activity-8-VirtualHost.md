@@ -79,7 +79,6 @@ Para configurar los VirtualHosts en Apache, sigue estos pasos:
 
 Repite estos pasos para cada VirtualHost que desees configurar, cambiando los nombres de dominio y rutas según sea necesario.
 
-
 ## Enlaces adicionales
 
 - [Integrar una máquina virtual en una red local](http://geekland.eu/integrar-maquina-virtual-en-una-red-local/)

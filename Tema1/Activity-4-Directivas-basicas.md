@@ -41,7 +41,7 @@ Guarda el archivo y reinicia Apache:
 sudo systemctl restart apache2
 ```
 
-## 3. Crea un nuevo host virtual que se acceda a través del dominio "prueba.local".
+## 3. Crea un nuevo host virtual que se acceda a través del dominio "prueba.local"
 
 1\. Crea un nuevo archivo de configuración:
 
@@ -93,11 +93,11 @@ sudo nano /etc/hosts
 
 Añade la siguiente línea:
 
-```
+```text
 127.0.0.1   prueba.local
 ```
 
-## 4. Configura el nuevo host virtual para que solo se pueda acceder desde la red local.
+## 4. Configura el nuevo host virtual para que solo se pueda acceder desde la red local
 
 Edita el archivo de configuración del nuevo host virtual:
 
@@ -125,7 +125,7 @@ Guarda el archivo y reinicia Apache:
 sudo systemctl restart apache2
 ```
 
-## 5. Crea un directorio llamado "privado" dentro del nuevo host virtual y configúralo para que sea necesario introducir un usuario y contraseña para acceder.
+## 5. Crea un directorio llamado "privado" dentro del nuevo host virtual y configúralo para que sea necesario introducir un usuario y contraseña para acceder
 
 1\. Crea el directorio:
 

@@ -1,6 +1,6 @@
 # Actividad #3 - Directivas básicas
 
-## Busca información sobre las siguientes directivas, el valor que toman por defecto y el lugar donde se encuentran definidas.
+## Busca información sobre las siguientes directivas, el valor que toman por defecto y el lugar donde se encuentran definidas
 
 ### **Directivas de identificación**
 
@@ -75,7 +75,7 @@
 2. **LogFormat**:
    - **Descripción**: Especifica el formato utilizado para registrar las solicitudes HTTP en los archivos de log.
    - **Valor por defecto (Common Log Format)**:
-     ```
+     ```text
      "%h %l %u %t \"%r\" %>s %b"
      ```
      Donde:

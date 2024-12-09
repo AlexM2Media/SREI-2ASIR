@@ -10,7 +10,7 @@ Para crear los directorios:
 sudo mkdir /var/www/html/dir1 /var/www/html/dir2
 ```
 
-### 2. Explica qué diferencia existe entre ambos:
+### 2. Explica qué diferencia existe entre ambos
 
 ```apache
 <Directory /var/www/example1>
@@ -100,7 +100,7 @@ d. Permite el acceso de las peticiones provenientes de "10.3.0.100" con máscara
 </Directory>
 ```
 
-### 4. Modifica la configuración de forma que el acceso a dir1:
+### 4. Modifica la configuración de forma que el acceso a dir1
 
 a. Se permita a "marisma.intranet" y no se permita desde 10.3.0.101:
 
@@ -116,7 +116,7 @@ a. Se permita a "marisma.intranet" y no se permita desde 10.3.0.101:
 </Directory>
 ```
 
-### 5. Modifica la configuración de forma que el acceso a dir2:
+### 5. Modifica la configuración de forma que el acceso a dir2
 
 a. Se permita a "10.3.0.100/8" y no a "marisma.intranet":
 

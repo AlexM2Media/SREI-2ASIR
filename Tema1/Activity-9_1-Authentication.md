@@ -2,7 +2,7 @@
 
 ## Ejercicios adicionales de autenticación básica
 
-### 1. Crea cinco usuarios: usuario1, usuario2, usuario3, usuario4, usuario5.
+### 1. Crea cinco usuarios: usuario1, usuario2, usuario3, usuario4, usuario5
 
 Para crear los usuarios con contraseñas, utiliza el comando `htpasswd`:
 
@@ -22,7 +22,7 @@ El archivo `.htpasswd` se encuentra en `/etc/apache2/` y contiene las credencial
 
 ---
 
-### 2. Crea dos grupos de usuarios:
+### 2. Crea dos grupos de usuarios
 
    - **Grupo 1**: formado por usuario1 y usuario2.
 
@@ -36,7 +36,7 @@ sudo nano /etc/apache2/groups
 
 Añade el siguiente contenido:
 
-```
+```text
 grupo1: usuario1 usuario2
 
 grupo2: usuario3 usuario4 usuario5
@@ -46,7 +46,7 @@ Guarda y cierra el archivo.
 
 ---
 
-### 3. Crea un directorio llamado `privado1` que permita el acceso a todos los usuarios.
+### 3. Crea un directorio llamado `privado1` que permita el acceso a todos los usuarios
 
 1\. Crea el directorio:
 
@@ -90,7 +90,7 @@ sudo systemctl restart apache2
 
 ---
 
-### 4. Crea un directorio llamado `privado2` que permita el acceso sólo a los usuarios del grupo1.
+### 4. Crea un directorio llamado `privado2` que permita el acceso sólo a los usuarios del grupo1
 
 1\. Crea el directorio:
 
@@ -136,11 +136,11 @@ sudo systemctl restart apache2
 
 ---
 
-### 5. La directiva `Satisfy` controla cómo se debe comportar el servidor cuando tenemos autorizaciones a nivel de host (order, allow, deny) y autorizaciones de usuarios (require).
+### 5. La directiva `Satisfy` controla cómo se debe comportar el servidor cuando tenemos autorizaciones a nivel de host (order, allow, deny) y autorizaciones de usuarios (require)
 
 Por ejemplo, para combinar autorización por IP y autenticación básica, puedes usar la directiva `Satisfy`.
 
-#### Ejemplo con `Satisfy any`:
+#### Ejemplo con `Satisfy any`
 
 Permite acceso si se cumple **cualquiera** de las condiciones (IP o autenticación).
 
@@ -166,7 +166,7 @@ Permite acceso si se cumple **cualquiera** de las condiciones (IP o autenticaci�
 </Directory>
 ```
 
-#### Ejemplo con `Satisfy all`:
+#### Ejemplo con `Satisfy all`
 
 Requiere que se cumplan **todas** las condiciones (IP y autenticación).
 
@@ -194,9 +194,9 @@ Requiere que se cumplan **todas** las condiciones (IP y autenticación).
 
 ---
 
-### 6. En el directorio `privado2`, haz que sólo sea accesible desde localhost y estudia cómo se comporta la autorización con `Satisfy any` y `Satisfy all`.
+### 6. En el directorio `privado2`, haz que sólo sea accesible desde localhost y estudia cómo se comporta la autorización con `Satisfy any` y `Satisfy all`
 
-#### Configuración para acceso desde localhost:
+#### Configuración para acceso desde localhost
 
 Edita el archivo de configuración del sitio:
 
@@ -234,7 +234,7 @@ Reinicia Apache para aplicar los cambios:
 sudo systemctl restart apache2
 ```
 
-#### Comportamiento:
+#### Comportamiento
 
 - Con `Satisfy any`: El acceso será permitido si se cumple **alguna** condición (autenticación o IP permitida).
 

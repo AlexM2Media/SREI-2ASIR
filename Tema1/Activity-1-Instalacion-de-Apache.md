@@ -4,7 +4,7 @@
 
 La arquitectura Web está compuesta por tres capas principales:
 
-1. **Capa de Presentación**: 
+1. **Capa de Presentación**:
    - Función: Interfaz de usuario
    - Se encarga de la presentación visual de la información
    - Interactúa directamente con el usuario final
@@ -19,7 +19,7 @@ La arquitectura Web está compuesta por tres capas principales:
    - Gestiona la base de datos
    - Almacena y recupera información según las solicitudes de la capa de lógica
 
-## 2. Una plataforma web es el entorno de desarrollo de software empleado para diseñar y ejecutar un sitio web; destacan dos plataformas web, LAMP y WISA. Explica en qué consiste cada una de ellas.
+## 2. Una plataforma web es el entorno de desarrollo de software empleado para diseñar y ejecutar un sitio web; destacan dos plataformas web, LAMP y WISA. Explica en qué consiste cada una de ellas
 
 ### LAMP (Linux, Apache, MySQL, PHP/Perl/Python)
 
@@ -39,7 +39,7 @@ LAMP es una plataforma de código abierto, altamente flexible y ampliamente util
 
 WISA es una plataforma propietaria de Microsoft, ideal para desarrollos en entornos Windows y .NET.
 
-## 3. Lee el siguiente artículo e instala Apache en Ubuntu:
+## 3. Lee el siguiente artículo e instala Apache en Ubuntu
 
 Para instalar Apache en Ubuntu, siga estos pasos:
 

@@ -32,6 +32,12 @@ Este repositorio incluye actividades llevadas a cabo en el módulo "*Servicios d
 |[Ejercicio 9.3](/Tema1/Activity-9_3-Authentication-MySQL.md)|Autenticación mediante módulo dbd|
 |[Ejercicio 10](/Tema1/Activity-10-SSL.md)|SSL|
 
+## [Proyecto 1ª Evaluación](/Proyecto1aEv/)
+
+|Ejercicio|Descripción|
+|---|---|
+|[Ejercicio 1](/Proyecto1aEv/Proyecto-1-SREI.md)|Instalación de Apache|
+
 ---
 **Autor:** Alejandro Mateo - [@AlexM2Media](https://github.com/AlexM2Media)  
 **Repositorio:** [SREI-2ASIR](https://github.com/AlexM2Media/SREI-2ASIR)  
