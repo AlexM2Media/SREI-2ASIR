@@ -38,6 +38,12 @@ Este repositorio incluye actividades llevadas a cabo en el módulo "*Servicios d
 |---|---|
 |[Ejercicio 1](/Proyecto1aEv/Proyecto-1-SREI.md)|Instalación de Apache|
 
+## [Prácticas AWS](/AWS/)
+
+|Ejercicio|Descripción|
+|---|---|
+|[Ejercicio 1](/AWS/AWS_Activity-1.md)| Apache: Autenticación MySQL y SSL|
+
 ---
 **Autor:** Alejandro Mateo - [@AlexM2Media](https://github.com/AlexM2Media)  
 **Repositorio:** [SREI-2ASIR](https://github.com/AlexM2Media/SREI-2ASIR)  

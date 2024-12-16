@@ -8,6 +8,9 @@ sudo apt update
 sudo apt install apache2
 ```
 
+![Fig_1](/Proyecto1aEv/.imgs/Fig_1.png)
+![Fig_2](/Proyecto1aEv/.imgs/Fig_2.png)
+
 ## 2. Configuración de dominios en el archivo hosts
 
 Editar el archivo `/etc/hosts`:
@@ -24,6 +27,8 @@ Añadir las siguientes líneas:
 127.0.0.1   departamentos.centro.intranet
 ```
 
+![Fig_3](/Proyecto1aEv/.imgs/Fig_3.png)
+
 ## 3. Activación de módulos para PHP y MySQL
 
 ```bash
@@ -36,11 +41,17 @@ sudo a2enmod php
 sudo systemctl restart apache2
 ```
 
+![Fig_4](/Proyecto1aEv/.imgs/Fig_4.png)
+![Fig_5](/Proyecto1aEv/.imgs/Fig_5.png)
+![Fig_6](/Proyecto1aEv/.imgs/Fig_6.png)
+
 ## 4. Instalación y configuración de WordPress
 
 ```bash
 sudo mysql -u root -p
 ```
+
+![Fig_7](/Proyecto1aEv/.imgs/Fig_7.png)
 
 En MySQL:
 
@@ -56,6 +67,8 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
+![Fig_8](/Proyecto1aEv/.imgs/Fig_8.png)
+
 Descargar e instalar WordPress:
 
 ```bash
@@ -69,6 +82,8 @@ sudo mv wordpress /var/www/html/centro.intranet
 
 sudo chown -R www-data:www-data /var/www/html/centro.intranet
 ```
+
+![Fig_9](/Proyecto1aEv/.imgs/Fig_9.png)
 
 Configurar Apache para centro.intranet:
 
@@ -94,6 +109,8 @@ Añadir:
 </VirtualHost>
 ```
 
+![Fig_10](/Proyecto1aEv/.imgs/Fig_10.png)
+
 Activar el sitio:
 
 ```bash
@@ -101,6 +118,9 @@ sudo a2ensite centro.intranet.conf
 
 sudo systemctl reload apache2
 ```
+
+![Fig_11](/Proyecto1aEv/.imgs/Fig_11.png)
+![Fig_25](/Proyecto1aEv/.imgs/Fig_25.png)
 
 ## 5. Activación del módulo wsgi
 
@@ -112,6 +132,9 @@ sudo a2enmod wsgi
 sudo systemctl restart apache2
 ```
 
+![Fig_12](/Proyecto1aEv/.imgs/Fig_12.png)
+![Fig_13](/Proyecto1aEv/.imgs/Fig_13.png)
+
 ## 6. Creación y despliegue de una aplicación Python
 
 Crear el directorio y la aplicación:
@@ -122,7 +145,7 @@ sudo mkdir /var/www/html/departamentos.centro.intranet
 sudo nano /var/www/html/departamentos.centro.intranet/app.py
 ```
 
-Contenido de app.py:
+Contenido de app\.py:
 
 ```python
 def application(environ, start_response):
@@ -139,6 +162,8 @@ def application(environ, start_response):
 
     return [output]
 ```
+
+![Fig_14](/Proyecto1aEv/.imgs/Fig_14.png)
 
 Configurar Apache para departamentos.centro.intranet:
 
@@ -165,6 +190,8 @@ Añadir:
 </VirtualHost>
 ```
 
+![Fig_15](/Proyecto1aEv/.imgs/Fig_15.png)
+
 Activar el sitio:
 
 ```bash
@@ -173,11 +200,15 @@ sudo a2ensite departamentos.centro.intranet.conf
 sudo systemctl reload apache2
 ```
 
+![Fig_16](/Proyecto1aEv/.imgs/Fig_16.png)
+
 ## 7. Protección del acceso a la aplicación Python mediante autenticación
 
 ```bash
 sudo htpasswd -c /etc/apache2/.htpasswd usuario
 ```
+
+![Fig_17](/Proyecto1aEv/.imgs/Fig_17.png)
 
 Modificar la configuración de Apache:
 
@@ -197,6 +228,8 @@ AuthUserFile /etc/apache2/.htpasswd
 Require valid-user
 ```
 
+![Fig_18](/Proyecto1aEv/.imgs/Fig_18.png)
+
 Reiniciar Apache:
 
 ```bash
@@ -214,6 +247,8 @@ sudo cp /etc/awstats/awstats.conf /etc/awstats/awstats.centro.intranet.conf
 
 sudo nano /etc/awstats/awstats.centro.intranet.conf
 ```
+
+![Fig_19](/Proyecto1aEv/.imgs/Fig_19.png)
 
 Modificar en el archivo:
 
@@ -235,6 +270,8 @@ Añadir:
 */10 * * * * www-data /usr/lib/cgi-bin/awstats.pl -config=centro.intranet -update > /dev/null
 ```
 
+![Fig_20](/Proyecto1aEv/.imgs/Fig_20.png)
+
 ## 9. Instalación del segundo servidor web (nginx)
 
 ```bash
@@ -242,6 +279,8 @@ sudo apt install nginx
 
 sudo nano /etc/nginx/sites-available/servidor2.centro.intranet
 ```
+
+![Fig_21](/Proyecto1aEv/.imgs/Fig_21.png)
 
 Configuración de nginx:
 
@@ -275,6 +314,8 @@ server {
 }
 ```
 
+![Fig_22](/Proyecto1aEv/.imgs/Fig_22.png)
+
 Activar el sitio:
 
 ```bash
@@ -293,11 +334,15 @@ sudo apt install php-fpm
 sudo apt install phpmyadmin
 ```
 
+![Fig_23](/Proyecto1aEv/.imgs/Fig_23.png)
+
 Configurar phpMyAdmin para nginx:
 
 ```bash
 sudo ln -s /usr/share/phpmyadmin /var/www/html/servidor2.centro.intranet/phpmyadmin
 ```
+
+![Fig_24](/Proyecto1aEv/.imgs/Fig_24.png)
 
 ---
 **Autor:** Alejandro Mateo - [@AlexM2Media](https://github.com/AlexM2Media)  
