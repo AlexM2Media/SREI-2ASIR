@@ -8,11 +8,15 @@
     sudo apt update && sudo apt upgrade -y
     ```
 
+    ![Fig_1](/AWS/.imgs/Fig_1.png)
+
 2. Instale Apache2 si aún no está instalado:
 
     ```bash
     sudo apt install apache2 -y
     ```
+
+    ![Fig_2](/AWS/.imgs/Fig_2.png)
 
 ## Configuración de autenticación con MySQL
 
@@ -26,6 +30,8 @@
     sudo a2enmod dbd
     ```
 
+    ![Fig_3](/AWS/.imgs/Fig_3.png)
+
 ### Configuración de la base de datos
 
 1. Instale MySQL si aún no está instalado:
@@ -33,6 +39,8 @@
     ```bash
     sudo apt install mysql-server -y
     ```
+
+    ![Fig_4](/AWS/.imgs/Fig_4.png)
 
 2. Acceda a MySQL y cree una base de datos y un usuario:
 
@@ -43,6 +51,9 @@
     FLUSH PRIVILEGES;
     ```
 
+    ![Fig_5](/AWS/.imgs/Fig_5.png)
+    ![Fig_6](/AWS/.imgs/Fig_6.png)
+
 3. Cree una tabla para almacenar los usuarios:
 
     ```sql
@@ -52,6 +63,8 @@
     password VARCHAR(255) NOT NULL
     );
     ```
+
+    ![Fig_7](/AWS/.imgs/Fig_7.png)
 
 4. Inserte algunos usuarios de prueba:
 
@@ -68,12 +81,16 @@
     sudo nano /etc/apache2/apache2.conf
     ```
 
+    ![Fig_8](/AWS/.imgs/Fig_8.png)
+
 2. Agregue la siguiente configuración para la conexión a la base de datos:
 
     ```apache
     DBDriver mysql
     DBDParams "host=localhost,dbname=apache_auth,user=apache_user,pass=contraseña_segura"
     ```
+
+    ![Fig_9](/AWS/.imgs/Fig_9.png)
 
 3. Configure la autenticación para un directorio específico:
 
@@ -87,12 +104,16 @@
     </Directory>
     ```
 
+    ![Fig_10](/AWS/.imgs/Fig_10.png)
+
 4. Cree el directorio protegido:
 
     ```bash
     sudo mkdir /var/www/html/area_restringida
     sudo echo "Contenido protegido" > /var/www/html/area_restringida/index.html
     ```
+
+    ![Fig_11](/AWS/.imgs/Fig_11.png)
 
 ## Creación de certificado SSL autofirmado
 
@@ -103,17 +124,23 @@
     sudo systemctl restart apache2
     ```
 
+    ![Fig_12](/AWS/.imgs/Fig_12.png)
+
 2. Genere el certificado y la clave:
 
     ```bash
     sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
     ```
 
+    ![Fig_13](/AWS/.imgs/Fig_13.png)
+
 3. Configure el VirtualHost SSL editando el archivo de configuración:
 
     ```bash
     sudo nano /etc/apache2/sites-available/default-ssl.conf
     ```
+
+    ![Fig_14](/AWS/.imgs/Fig_14.png)
 
 4. Modifique la configuración del VirtualHost:
 
@@ -128,12 +155,16 @@
     </VirtualHost>
     ```
 
+    ![Fig_15](/AWS/.imgs/Fig_15.png)
+
 5. Habilite el sitio SSL y reinicie Apache
 
     ```bash
     sudo a2ensite default-ssl.conf
     sudo systemctl restart apache2
     ```
+
+    ![Fig_16](/AWS/.imgs/Fig_16.png)
 
 ## Verificación
 
