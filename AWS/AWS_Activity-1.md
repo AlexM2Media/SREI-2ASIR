@@ -60,7 +60,7 @@
     USE apache_auth;
     CREATE TABLE usuarios (
     username VARCHAR(50) NOT NULL PRIMARY KEY,
-    password VARCHAR(255) NOT NULL
+    password CHAR(64) NOT NULL
     );
     ```
 
@@ -69,8 +69,8 @@
 4. Inserte algunos usuarios de prueba:
 
     ```sql
-    INSERT INTO usuarios (username, password) VALUES ('usuario1', PASSWORD('contraseña1'));
-    INSERT INTO usuarios (username, password) VALUES ('usuario2', PASSWORD('contraseña2'));
+    INSERT INTO usuarios (username, password) VALUES ('usuario1', SHA2('contraseña1', 256));
+    INSERT INTO usuarios (username, password) VALUES ('usuario2', SHA2('contraseña2', 256));
     ```
 
 ### Configuración de Apache
