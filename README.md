@@ -45,6 +45,10 @@ Este repositorio incluye actividades llevadas a cabo en el módulo "*Servicios d
 |[Ejercicio 1](/AWS/AWS_Activity-1.md)| Apache: Autenticación MySQL y SSL|
 
 ---
+## Actividad del Repositorio
+![Alt](https://repobeats.axiom.co/api/embed/9416879fc537d25ef29d5ee0ccecdb20d92649ac.svg "Repobeats analytics image")
+
+---
 **Autor:** Alejandro Mateo - [@AlexM2Media](https://github.com/AlexM2Media)  
 **Repositorio:** [SREI-2ASIR](https://github.com/AlexM2Media/SREI-2ASIR)  
 **Web/Portfolio:** [alexm2.media](https://alexm2.media)
