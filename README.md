@@ -49,9 +49,12 @@ Este repositorio incluye actividades llevadas a cabo en el módulo "*Servicios d
 |Ejercicio|Descripción|
 |---|---|
 |[Ejercicio 1](/Tema2/DNS-Activity-1-Introduccion.md)| DNS: Introducción|
+|[Ejercicio 2](/Tema2/DNS-Activity-2-Introduccion-II.md)| DNS: Instorucción II|
 
 ---
+
 ## Actividad del Repositorio
+
 ![Alt](https://repobeats.axiom.co/api/embed/9416879fc537d25ef29d5ee0ccecdb20d92649ac.svg "Repobeats analytics image")
 
 ---
