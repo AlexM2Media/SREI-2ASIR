@@ -27,9 +27,9 @@ FQDN significa Fully Qualified Domain Name (Nombre de Dominio Completamente Cali
 
 Ejemplos de FQDN:
 
-- www.ejemplo.com
-- mail.google.com
-- es.wikipedia.org
+- `www.ejemplo.com`
+- `mail.google.com`
+- `es.wikipedia.org`
 
 ### 3. ¿Qué son los root servers? ¿Cuántos root servers hay? ¿Cuántos servidores raíz físicos existen y dónde se encuentran? ¿Qué es anycast?
 
