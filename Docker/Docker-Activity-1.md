@@ -1,4 +1,4 @@
-# Actividad #1 - Instalación de Docker en Ubuntu
+# Actividad #1 - Instalación de Docker en ~~Ubuntu~~ Fedora
 
 ## Ejercicio
 
