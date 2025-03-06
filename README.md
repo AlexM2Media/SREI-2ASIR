@@ -85,6 +85,8 @@ Este repositorio incluye actividades llevadas a cabo en el módulo "*Servicios d
 
 ![Alt](https://repobeats.axiom.co/api/embed/9416879fc537d25ef29d5ee0ccecdb20d92649ac.svg "Repobeats analytics image")
 
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/AlexM2Media/SREI-2ASIR?labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit%20Reviews)
+
 ---
 **Autor:** Alejandro Mateo - [@AlexM2Media](https://github.com/AlexM2Media)  
 **Repositorio:** [SREI-2ASIR](https://github.com/AlexM2Media/SREI-2ASIR)  
