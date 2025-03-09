@@ -54,11 +54,11 @@ Este repositorio incluye actividades llevadas a cabo en el módulo "*Servicios d
 |---|---|
 |[Ejercicio 1](/Tema2/DNS-Activity-1-Introduccion.md)| DNS: Introducción|
 |[Ejercicio 2](/Tema2/DNS-Activity-2-Introduccion-II.md)| DNS: Introducción II|
-|[Ejercicio 3](/Tema2/DNS-Activity-3-nslookup.md)| DNS: nslookup|
-|[Ejercicio 4](/Tema2/DNS-Activity-4-dig.md)| DNS: dig|
+|[~~Ejercicio 3~~](/Tema2/DNS-Activity-3-nslookup.md)| ~~DNS: nslookup~~|
+|[~~Ejercicio 4~~](/Tema2/DNS-Activity-4-dig.md)| ~~DNS: dig~~|
 |[Ejercicio 5](/Tema2/DNS-Activity-5-Caching-fordwarding-DNS-Server.md)| DNS: Caching & Forwarding Server|
 |[Ejercicio 6](/Tema2/DNS-Activity-6-Master-DNS-server.md)| DNS: Master DNS Server|
-|[Ejercicio 7](/Tema2/DNS-Activity-7-Slave-DNS-server.md)| DNS: Slave DNS Server|
+|[~~Ejercicio 7~~](/Tema2/DNS-Activity-7-Slave-DNS-server.md)| ~~DNS: Slave DNS Server~~|
 |[Ejercicio 8](/Tema2/DNS-Activity-8-Subdominios.md)| DNS: Subdominios|
 
 ## [Docker](/Docker/)
@@ -73,11 +73,11 @@ Este repositorio incluye actividades llevadas a cabo en el módulo "*Servicios d
 |[Ejercicio 5](/Docker/Docker-Activity-5.md)| Docker Compose |
 |[Ejercicio 6](/Docker/Docker-Activity-6.md)| Creación de Imágenes Docker |
 
-## [Proyecto 2ª Evaluación](/Proyecto2aEv/)
+## ~~[Proyecto 2ª Evaluación](/Proyecto2aEv/)~~
 
 |Ejercicio|Descripción|
 |---|---|
-|[Proyecto 2ª Evaluación](/Proyecto2aEv/Proyecto-2-SREI.md)|Servidor de Alojamiento|
+|[~~Proyecto 2ª Evaluación~~](/Proyecto2aEv/Proyecto-2-SREI.md)|~~Servidor de Alojamiento~~|
 
 ---
 
